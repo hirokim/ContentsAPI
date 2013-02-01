@@ -1,4 +1,4 @@
-package hirokim.contents.api.dao;
+package hirokim.contents.api.util;
 
 import hirokim.contents.api.model.Content;
 import java.util.*;

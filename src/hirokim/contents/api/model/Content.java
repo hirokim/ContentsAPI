@@ -1,30 +1,44 @@
 package hirokim.contents.api.model;
 
-import javax.jdo.annotations.*;
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable(identityType = IdentityType.APPLICATION)
 public class Content {
 	
 	@PrimaryKey
-    @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-    private Long id;
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	private String id;
 	
 	@Persistent
 	private String appid;
 	
 	@Persistent
 	private String category;
-	
+
 	@Persistent
 	private String group;
-	
+
 	@Persistent
 	private String name;
-	
+
 	@Persistent
 	private String url;
+	
+	public Content() {
+		super();
+		this.id = null;
+		this.appid = null;
+		this.category = null;
+		this.group = null;
+		this.name = null;
+		this.url = null;
+	}
 
-	public Content(Long id, String appid, String category, String group,
+	public Content(String id, String appid, String category, String group,
 			String name, String url) {
 		super();
 		this.id = id;
@@ -33,6 +47,14 @@ public class Content {
 		this.group = group;
 		this.name = name;
 		this.url = url;
+	}
+	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getAppid() {

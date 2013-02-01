@@ -1,4 +1,4 @@
-package hirokim.contents.api.dao;
+package hirokim.contents.api.util;
 
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManagerFactory;
