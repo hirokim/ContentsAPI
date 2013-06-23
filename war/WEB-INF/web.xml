@@ -7,6 +7,30 @@
 		<servlet-name>AVActoreList</servlet-name>
 		<url-pattern>/av_actore_list</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>PerformerList</servlet-name>
+		<servlet-class>hirokim.contents.api.PerformerListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PerformerList</servlet-name>
+		<url-pattern>/performer_list</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TalentList</servlet-name>
+		<servlet-class>hirokim.contents.api.TalentListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TalentList</servlet-name>
+		<url-pattern>/talent_list</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>MusicianList</servlet-name>
+		<servlet-class>hirokim.contents.api.MusicianListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MusicianList</servlet-name>
+		<url-pattern>/musician_list</url-pattern>
+	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
