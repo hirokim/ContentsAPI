@@ -8,6 +8,14 @@
 		<url-pattern>/av_actore_list</url-pattern>
 	</servlet-mapping>
 	<servlet>
+		<servlet-name>PoliticianList</servlet-name>
+		<servlet-class>hirokim.contents.api.PoliticianListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PoliticianList</servlet-name>
+		<url-pattern>/politician_list</url-pattern>
+	</servlet-mapping>
+	<servlet>
 		<servlet-name>PerformerList</servlet-name>
 		<servlet-class>hirokim.contents.api.PerformerListServlet</servlet-class>
 	</servlet>
